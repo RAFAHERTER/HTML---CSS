@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+    /*   SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+    */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active /* active significa manter o cursor do mouse clicado */{
+            color: yellow;
+        }
+
+        .especial:hover{
+            background-color: black;
+            color: white;
+        }
+
+        /*Consigo adicionar coisas antes (before) ou depois (after) no conteúdo pelo CSS, para cada personalização que eu queira*/
+        
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            color: rgb(137, 137, 137);
+            font-weight: normal;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+        <ul>
+            <li><a href="https://github.com/gustavoguanabara" target ="_blank">Repositório do Git Hub</a></li>
+            <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do Youtube</a></li>
+            <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do curso em video</a></li>
+        </ul>
+
+        <h1>Pseudo-elementos</h1>
+            <p>
+                Os pseudo-elementos, podem mexer nas classes, nos id's e diretamente no conteúdo periférico do elemento.
+            </p>
+</body>
+</html>

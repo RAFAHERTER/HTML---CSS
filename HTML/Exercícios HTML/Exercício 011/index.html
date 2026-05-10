@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmica</h1>
+        <p>
+           Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador 
+        </p>
+
+        <p>
+            <mark>Isso é utilizado principalmente, para quando você quer acessar um site dentro de aparelhos diferentes, como Celular, tablet, ou computador. Para assim termos diferentes soluções de imagens para cada aparelho com o objetivo de suportar as imagens e evitar o scroll lateral de fotos muito grandes</mark>
+        </p>
+
+        <p>
+            <mark>Usamos a tag &lt;picture&gt; para podermos colocar todas as nossas funcionalidades dentro dela, inclusive a imagem BASE com a tag "img"</mark>
+        </p>
+
+        <p>
+            <mark>O source media= "min ou max", servem para delimitar até quantos píxels no maximo ou no mínimo é necessário para que a foto/imagem seja alterada</mark>
+        </p>
+
+
+
+
+
+
+
+
+        
+        <picture> 
+<source media="(max-width:650px)" srcset="imagens/foto-p.png" type="image/png">
+
+<source media="(max-width:1000px)" srcset="imagens/foto-m.png" type="image/png">
+
+<img src="imagens/foto-g.png" alt="imagem flexível">
+        </picture>
+
+
+
+
+
+
+
+    
+    <h1>Audios</h1>
+        <p>
+            Vamos aprender a reproduzir audios em HTML5.
+            <br>
+            Da forma mais simples usamos a tag &lt;audio + "controls" + "autoplay"&gt;. <br>
+            Aceitam formatos MP3, WAV e OGG
+        </p>
+        <audio src="mídia/musica.mp3" controls autoplay></audio> 
+
+        <p>
+            <mark>Agora da maneira mais complexa: usamos a tag &lt;audio&gt; e dentro das TAGs usamos o &lt;source src="" type=""&gt; sendo o type, para arquivos em mp3, utilizar mpeg, para arquivos em ogg usar type ogg, e para arquivos em WAV usar type wav. </mark>
+        </p>
+
+        <p>
+            <mark>E a ordem que for colocar no código importa, pois eles tentarão rodar o seu áudio na sequência.</mark>
+        </p>
+
+            <p>
+                <mark>
+                    Além disso usa-se dentro da tag o "preload" que significa em qual momento o seu áudio irá carregar para o cliente. Se o seu site só carregar quando o áudio carregar também (auto)(perigoso caso seja um áudio muito grande e pesado).
+                    Se ele carrega gradualmente depois do site ter sido carregado (metadata)(recomendado).
+                    Ou deixar no "none" que faria que seu áudio fosse carregado apenas quando o cliente clicasse para reproduzi-lo.
+                </mark>
+            </p> 
+
+            <p>
+                <mark>
+                    Também usa dentro da tag "controls" para mostrar os controle para reproduzir os áudios.
+                    <br>
+                    Também usa-se o loop, (caso queira) que gera um loop quando o áudio acaba, fazendo-o recomeçar.
+                </mark>
+            </p>
+            
+            <p>
+                <mark style="background-color: rgb(255, 85, 0);">
+                    Lembre-se sempre, cuidado com direitos autorais com os áudios que for colocar em seu site. <br>
+                    Para pegar áudios sem licensas no YouTube, clique na sua conta (já dentro do YouTube), Vá em Youtube Studio, e depois no canto esquerdo vá em biblioteca de áudio. Lá terá uma infinidade de áudios que poderá utilizar.
+                </mark>
+            </p>
+
+        <audio preload="metadata" controls loop>
+            <source src="mídia/musica.mp3" type="audio/mpeg">
+        </audio>
+
+        <br>
+
+        <audio preload="metadata" autoplay controls loop>
+            <source src="mídia/musica2.mp3" type="audio/mpeg">
+        </audio>
+
+        <p> 
+            Caso o navegador do cliente nao reproduza áudio, coloque ele como arquivo baixável para que ele possa instalá-lo. <br>
+            Infelizmente seu navegador não consegue reproduzir o áudio <a href="mídia/musica2.mp3" target="_blank">Clique aqui para baixar o arquivo</a>
+        </p>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" name="referrerpolicy" content="strict-origin-when-cross-origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente, ou seja, HOSPEDAGEM PRÓPRIA.</h1>
+        <p>
+            Este vídeo está hospedado no meu próprio servidor.
+        </p>
+
+        <p>
+            <mark>Lembrando que os vídeos as vezes irão possuir as mesmas funcionalidades que áudio escrevendo "controls" para mostrar o controle do vídeo. </mark>
+        </p>
+<h1>Vídeos de HOSPEDAGEM PRÓPRIA</h1>
+        <p>
+            <mark>Além disso também haverá a tag "source" dentro da tag vídeo.</mark>
+        </p>
+
+        EXEMPLOS SEM O "SOURCE" DA MANEIRA MAIS SIMPLES: <br>
+        <video src="midia/Meu-Video(1).mp4" width="200" controls></video> <br>
+        <video src="midia/Meu-Video(1).webm" controls width="200"></video>
+         
+        <br>
+        
+        <p>
+            EXEMPLOS COM O "SOURCE": <br>
+            <video width="200" poster="imagens/imagem-thumb-video.jpg" controls>
+            <source src="midia/Meu-Video(1).mp4" type="video/mp4" >
+    
+            <source src="midia/Meu-Video(1).webm" type="video/webm ">
+
+            <source src="midia/Meu-Video(1).ogv" type="video/ogg">
+            </video>
+            
+            <p><mark>Os diversos "source" embutido dentro da tag vídeo/áudio, é para referenciar o mesmo vídeo, porém de diferentes tipos de arquivos, como o mp4,mp3, webm, ogg e entre outros. Desse jeito as várias plataformas e navegadores sejam compatíveis ao seu vídeo/áudio e poder reproduzi-los.</mark></p>
+
+            <p>
+                <mark>O "poster" dentro da tag video é para colocar uma imagem para a thumb do vídeo.</mark>
+            </p>
+
+            <p>
+                <mark>
+                    Usando dessa forma, apenas um vídeo/áudio será reproduzido na sequência que foi colocado no código por ordem de compatibilidade com o site.
+                    Portanto, caso não consgiga reproduzir o primeiro vídeo/áudio, tentará reproduzir o segundo e assim por diante.
+                </mark>
+            </p>
+            <p>
+                Caso não consiga reproduzir nenhum desses vídeos, o desenvolver deverá colocar a seguinte frase: <q>Seu navegador não tem compatibilidade para reproduzir este vídeo.</q>
+            </p>
+            
+
+            <p>
+                <mark style="background-color: rgb(222, 94, 29);">CUIDADO! Ao hospedar videos dentro do site o consumo pode ser gigantesco para seu cliente, caso um monte de pessoas acesse o site mesmo utilizando um arquivo leve.</mark>
+            </p>
+
+    <h1>Inserindo vídeos EXTERNOS, serviços de hospedagem de vídeo</h1>
+            <h1>Inserindo Vídeos do Youtube</h1>
+            <p>
+                Podemos colocar vídeo do Youtube dentro do seu site. <br>
+                Inserindo vídeos do YouTube
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/B1J6Ou4q8vE?si=4WwIKjSq7sVA8-Rw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <p>
+                Aparentemente o BGLH no YouTube não esta funcionando. Tentei com vários Vídeos e não deu certo.
+            </p>
+
+            <h1>Iserindo vídeos do VIMEO</h1>
+            
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/330207644?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:70%;height:70%;" title="Animation reel_2018"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+            <br>
+
+            <iframe src="https://player.vimeo.com/video/29315013?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Animation Reel"></iframe>
+
+            <p>
+                <mark style="background-color: red;">AEEEEEE POHAAAAA no VIMEO DEU CERTO HIHI.... EXCELENTE!!!</mark>
+            </p>
+
+</body>
+</html>

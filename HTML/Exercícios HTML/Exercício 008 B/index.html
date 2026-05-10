@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    
+    <h2>Código Fonte e pré formatação</h2>
+        <p>O comando <code>document.getElementbyId('teste')</code> é escrito em linguagem Javascript. <br>
+        </p> <!--As letras não possuem o mesmo espaço na hora de fazer a leitura, ou seja, elas não são mono-espaçadas.
+        E para fazer converter isso fazendo com que todas as "hitboxs" sejam iguais usamos o comando "code" --> 
+
+        <pre>
+            <code>
+    num = int(input('Digite um número'))
+    if num %2 ==0;
+        print(f'0 número {num}é PAR')
+    else:
+        print(f'0 número {num}é IMPAR)
+    print('Fim do programa')
+            </code>
+            As letras não possuem o mesmo espaço na hora de fazer a leitura, ou seja, elas não são mono-espaçadas.
+        E para fazer converter isso fazendo com que todas as "hitboxs" sejam iguais usamos a tag &lt;code&gt;
+        </pre>
+    
+        <h2>Citações simples</h2>
+            <p>
+                Como diria o pai de um amigo: <q>o computador muito rápido.</q> <!--Utilizar a tag <q> ao invés de aspas para dar sentido ao conteúdo -->
+                    <br>
+                Utilizar a tag &lt;q&gt; para citações oferece significado ao texto, embora utilizar as "aspas" tenha a mesma "função" no texto, porém não é semântico
+            </p>
+        <h2>Citações Completas</h2>
+            <p>
+                Segunda Jeff Noble, no seu livro HTML para leigos (utilizando a tag &lt;blockquote&gt;)
+            </p>
+            <blockquote cite="(link do lugar que pegou essa citação)">
+                A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+            </blockquote>
+
+            <h2>Texto dentro de texto</h2>
+
+            <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando (Usando a tag &lt;abbr&gt;) </p>
+
+            <h2>Texto invertido usando a tag &lt;bdo&gt;</h2>
+            <p>
+                <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo> (texto original usando &lt;BDO&gt; para a direita)
+<br>
+                <bdo dir="ltr">Estou aprendendo a criar coisas em HTML (texto original usando &lt;BDO&gt; para a esquerda)</bdo>
+            </p>
+            
+</body>
+</html>

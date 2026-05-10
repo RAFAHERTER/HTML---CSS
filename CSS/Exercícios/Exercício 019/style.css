@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/*
+
+    Tudo em HTML que for id = # em CSS
+    Tudo em HTML que for class = . em CSS
+
+    Não pode utilizar um mesmo "id" para outros elementos, APENAS para UM. Caso contrário, mesmo que funcione, isso está ERRADO
+
+    É por isso que utilizamos o CLASS, pois ela sim, pode ser utilizada para mais de um elemento
+
+    Também é possível colocar mais de uma classe num mesmo elemento. 
+    Também é possível colocar class dentro de um seletor que já tem um ID, porém o ID sobrepõe o class
+*/
+
+body{
+    background-color: rgb(179, 207, 179);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+h1{
+    color: rgb(47, 89, 47);
+}
+
+#principal{
+    text-align: center;
+    background-color: rgb(37, 177, 37);
+    color: white;
+}
+
+h2{
+    color: green;
+}
+footer{
+    margin: 0px;
+    background-color: rgb(172, 172, 233);
+    padding: 0px;
+}
+
+.basico{
+    color: rgb(124, 118, 209);
+    font-weight: 900;
+}
+
+.intermediario{
+    color: rgb(205, 136, 7);
+}
+
+.avancado{
+    color: red;
+}
+
+.destaque{
+    background-color: #c5c56070;
+}
+p{
+    text-indent: 20px;
+}

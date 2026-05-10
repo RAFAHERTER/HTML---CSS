@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 3 FINAL</title>
+</head>
+<body>
+<h1> Prática HTML - Rafael Herter (parte 3)</h1>
+<a href="../Prática 2/Parte2.html">Caso queira ir para a prática anterior (Parte 2) clique nessa frase.</a> <br> <br> <a href="../Prática 1/index.html">Caso queira ir para a prática (Parte 1) clique nessa frase.</a>
+    
+    <h2>Listas ordenadas</h2>
+        <p>
+            Usamos as listas ordenadas para indicar que a sequência das ações importam. Podemos fazer listas ordenadas com a tag &lt;ol&gt; e sempre que for escrever algo na lista deve estar compreendido entre as tags &lt;li&gt;.
+            <br>
+            Exemplo: O que eu faço depois que eu acordo<br>
+                <ol type="1">
+                    <li>Faço minhas necessidades</li>
+                    <li>Escovo os dentes</li>
+                    <li>Arrumo a minha cama</li>
+                    <li>Tomar café</li>
+                    <li>Preparar para o trabalho</li>
+                </ol>
+            Também podemos escolher que tipo de sequência será seguida pela lista, se será numérica, por letras, ou por números romanos. <br>
+            Assim:
+                <ol type="A">
+                    <li>Faço minhas necessidades</li>
+                    <li>Escovo os dentes</li>
+                    <li>Arrumo a minha cama</li>
+                    <li>Tomar café</li>
+                    <li>Preparar para o trabalho</li>
+                </ol>
+                <ol type="a">
+                    <li>Faço minhas necessidades</li>
+                    <li>Escovo os dentes</li>
+                    <li>Arrumo a minha cama</li>
+                    <li>Tomar café</li>
+                    <li>Preparar para o trabalho</li>
+                </ol>
+
+
+                <ol type="I">
+                    <li>Faço minhas necessidades</li>
+                    <li>Escovo os dentes</li>
+                    <li>Arrumo a minha cama</li>
+                    <li>Tomar café</li>
+                    <li>Preparar para o trabalho</li>
+                </ol>
+
+                <ol type="i">
+                    <li>Faço minhas necessidades</li>
+                    <li>Escovo os dentes</li>
+                    <li>Arrumo a minha cama</li>
+                    <li>Tomar café</li>
+                    <li>Preparar para o trabalho</li>
+                </ol>
+
+            Também podemos começar a sequência na numeração ou letras que desejamos. <br>
+            Assim:
+                <ol type="1" start="50">
+                    <li>Faço minhas necessidades</li>
+                    <li>Escovo os dentes</li>
+                    <li>Arrumo a minha cama</li>
+                    <li>Tomar café</li>
+                    <li>Preparar para o trabalho</li>
+                </ol>
+                <ol type="I" start="50">
+                    <li>Faço minhas necessidades</li>
+                    <li>Escovo os dentes</li>
+                    <li>Arrumo a minha cama</li>
+                    <li>Tomar café</li>
+                    <li>Preparar para o trabalho</li>
+                </ol>
+
+                <ol type="A" start="8">
+                    <li>Faço minhas necessidades</li>
+                    <li>Escovo os dentes</li>
+                    <li>Arrumo a minha cama</li>
+                    <li>Tomar café</li>
+                    <li>Preparar para o trabalho</li>
+                </ol>
+        </p>
+    <h2>Lista não ordenada</h2>
+        <p>
+            Podemos utilizar uma forma de lista que não depende da sequência, e sim apenas listá-las. Podemos utilizar formatos diferentes também, como DISC, CIRCLE e SQUARE <br>
+            Assim temos: 
+            
+                <ul type="disc">
+                    <li>Farinha de trigo</li>
+                    <li>Cenoura</li>
+                    <li>Fermento</li>
+                    <li>Chocolate</li>
+                    <li>Granulado</li>
+                    <li>Manteiga</li>
+                    <li>Whatever man</li>
+                </ul>
+            
+                <ul type="circle">
+                    <li>Farinha de trigo</li>
+                    <li>Cenoura</li>
+                    <li>Fermento</li>
+                    <li>Chocolate</li>
+                    <li>Granulado</li>
+                    <li>Manteiga</li>
+                    <li>Whatever man</li>
+                </ul>
+
+                <ul type="square">
+                    <li>Farinha de trigo</li>
+                    <li>Cenoura</li>
+                    <li>Fermento</li>
+                    <li>Chocolate</li>
+                    <li>Granulado</li>
+                    <li>Manteiga</li>
+                    <li>Whatever man</li>
+                </ul>
+        </p>
+    <h2>Lista dentro de listas</h2>
+        <p>
+            Podemos fazer listas dentro de listas caso queiramos aprofundar sobre um assunto em específico:
+            <br>
+            Assim: Lista de coisas que eu faço quando acordo
+             <ol type="1">
+                <li>Levantar da cama</li>
+                    <ol type="a">
+                        <li>Acordar</li>
+                        <li>Abrir os olhos</li>
+                        <li>Retirar cobertor</li>
+                        <li>Sentar na cama</li>
+                        <li>Levantar da cama</li>
+                    </ol>
+                <li>Ir até o banheiro</li>
+                    <ol type="a" start="6">
+                        <li>Fecha a porta do banheiro</li>
+                        <li>Tranca a porta</li>
+                        <li>Escova os dentes</li>
+                            <ul type="circle">
+                                <li>Pegar escovas de dente</li>
+                                <li>Passar creme dental na escova</li>
+                                <li>Esfregar escova nos dentes</li>
+                            </ul>
+                        <li>Enxáguo a boca</li>
+                        <li>Seco meu rosto</li>
+                        <li>Saio do banheiro</li>
+                    </ol>
+                <li>Ir à cozinha</li>
+                <li>Tomar café</li>    
+             </ol>
+        </p>
+
+    <h2>Links Externos</h2>
+        <p>
+            Você pode acessar o link de qualquer coisa na internet, desde que referencie a URL completa do site, e usando a tag &lt;a href="(LINK)" target= "_blank" (serve para abrir o link em uma nova página) &gt; . 
+            o "rel" dentro da TAG serve para especificar se o link é externo (external) ou interno (next)/(dentro de pasta)
+            <br>
+            Assim temos:
+            <br>
+            <a href="https://www.youtube.com/watch?v=suL56Mdx22Y&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=30" target="blank" rel="external">Clique aqui para acessar o vídeo atual no qual estou desse curso.</a>
+        </p>
+    <h2>Links Internos</h2>
+        <p>
+            Caso queira acessar a segunda página dessa pasta, basta utilizar a mesma tag anterior, porém em href="", nos referenciamos o arquivo que queremos dentro da pasta.
+            <br>
+            E caso o arquivo que queira esteja dentro de uma pasta anterior, basta usar "../" que a pasta anterior será aberta.
+            <br>
+            Assim temos:
+            <br>
+            <a href="pag002.html" rel="next">Caso queira acessar a nossa segunda página clique aqui.</a>
+        </p>
+        <p>
+            <a href="../Prática 2/Parte2.html" target="_blank">Clique aqui para voltar a PARTE 2 DA NOSSA PRÁTICA (APENAS UM EXEMPLO utilizando o _blank).</a>
+        </p>
+
+        <p>
+            <a href="" target="_blank">HostNet</a>
+        </p>
+</body>
+</html>

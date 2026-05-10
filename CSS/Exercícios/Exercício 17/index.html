@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS3</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 1em;
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            font-size: 3em;
+            font-style: italic;
+            text-decoration: underline;
+        }
+        
+        /* Para evitar um monte de linhas como acim, 
+        Colocar sempre na seguinte sequência: -font-style -> font-weight -> font-size -> font-family.
+        Assim podemos udar da seguinte forma.
+        E isso é uma propriedade short hand(MAOZINHA)
+        */
+
+        h2{
+            font: italic 900 2em Arial, sans-serif;
+            text-decoration: underline;
+        }
+
+        /*
+        Medidas Absolutas:
+        cm (centimetro), mm(milimetro), in(polegada), px)píxel, pt(ponto), pc(paica).
+
+        Medidas Relativas:
+        em(tamanho da fonte em relação à letra "M" maiúsculo), ex(relativo a altura do "x" minúsculo da fonte), rem, vw(view width (largura da viewport)), vh (altura da view port), % .... entre outras
+        */
+    </style>
+    <!--Temos ARIAL, HELVETICA e VERDANA, "as mais famosas"-->
+</head>
+<body>
+    <h1>Trabalhando com Fontes em CSS</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium provident nam dolorum earum placeat rem, ab sed tempora sapiente suscipit sint distinctio? Alias, vel doloribus quod architecto veniam animi ipsa? Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quam similique magnam perferendis rem velit a natus blanditiis veritatis, fugiat est magni, cum saepe voluptatum laudantium veniam excepturi, modi tempora.
+    </p>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia aperiam, error quam nisi dicta sed nostrum rem debitis ea minus officiis vel, corrupti aut at facere itaque, aliquam obcaecati laborum!
+    </p>
+
+<h2>Subtítulo do exercício</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eius corrupti perspiciatis vitae reprehenderit, rerum saepe, deserunt dolorum dolores sapiente animi deleniti consequuntur ut? Cupiditate saepe aspernatur sed impedit consequatur!
+    </p>
+</body>
+</html>
