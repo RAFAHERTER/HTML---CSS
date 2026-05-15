@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Background-size</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*
+                Podemos utilizar no Background-size em porcentagem ou em pixels
+
+                utilizar o contain (faz com que a imagem seja 100% exibida, e tentar adaptar ao tamanho da tela sem cortar a imagem)
+                
+                utilizar o auto (que faz no automático e deixa o navegador se virar pra poder exibir a imagem),  
+
+                e também podemos utilizar o "cover" (que significa "cobrir") e vai cobrir a tela inteira, mesmo que pra isso tenha que cortar a imagem (que é o mais apropriado para este exemplo))
+
+            */
+        }
+        main{
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit labore ratione aperiam voluptate rem eveniet commodi. Eaque, odit non quo, pariatur possimus reprehenderit assumenda, soluta consequuntur sapiente aliquam perferendis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime officia id ipsa perspiciatis possimus explicabo saepe pariatur ad corrupti, iusto vel atque blanditiis recusandae quis quasi. Sit necessitatibus itaque delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptas saepe numquam incidunt quos. Rem, animi odio iure sunt laborum hic deleniti, laboriosam placeat minus, accusamus mollitia! Vitae, similique vel.
+        </p>
+    </main>
+</body>
+</html>
