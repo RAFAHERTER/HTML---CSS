@@ -7,11 +7,25 @@
     <style>
         body{
             height: 100vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-attachment: fixed;*/
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
+
+             /* Temos também as shorts hand para background na seguinte sequência.
+            
+            color, image, position, repeat, [size], attachment
+
+            porém o cover não funciona no short-hand
+
+            */
+            
             /*
                 Podemos utilizar no Background-size em porcentagem ou em pixels
 
@@ -22,10 +36,20 @@
                 e também podemos utilizar o "cover" (que significa "cobrir") e vai cobrir a tela inteira, mesmo que pra isso tenha que cortar a imagem (que é o mais apropriado para este exemplo))
 
             */
+
+             
+            
+            /* Temos também a opção de scroll, que vai manter no mesmo normalmente. 
+            A opção de "fixed" serve para justamente manter a imagem de fundo, fixada enquanto o conteúdo mantem com scroll */
+
+
+
+           
+
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
