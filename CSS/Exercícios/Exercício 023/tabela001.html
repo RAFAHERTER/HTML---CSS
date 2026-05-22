@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+         th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        tr.linha{
+            background-color: gray;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td.dado{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- NÃO CRIE O SEU SITE COM ESTRUTURA DE TABELAS -->
+    <h1>Exemplos de Tabelas</h1>
+
+
+        <!-- Hierarquia de tabelas simples
+    
+        TABLE = tabela
+        TR = table row (linha da tabela)
+        TH = table header (cabeçalho da tabela)
+        TD = table data (dado da tabela)
+
+        /td e /tr são as tags, ou seja, podem ser omitidas, mas é recomendado o uso para melhor organização do código.
+
+        Se a hierarquia não for respeitada, o navegador irá corrigir o código, mas isso pode gerar resultados inesperados, como mostar os dados ou em cima do cabeçalho ou embaixo da tabela.
+        
+        -->
+
+        <table>
+            <tr>
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+                <th>Coluna 3</th>
+            </tr>
+            <tr>
+                <td class="dado">A1</td>
+                <td>B1</td>
+                <td class="dado">C1</td>
+            </tr>
+
+            <tr class="linha">
+                <td>A2</td>
+                <td>B2</td>
+                <td class="dado">C2</td>
+            </tr>
+
+            <tr>
+                <td class="dado">A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+
+            <tr>
+                <td class="dado">A4</td>
+                <td>B4</td>
+                <td class="dado">C4</td>
+            </tr>
+
+            
+        </table>
+        
+</body>
+</html>
