@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Semânticas</title>
     <style>
+        
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -16,11 +17,18 @@
 
          th, td{
             border: 1px solid black;
-            padding: 8px;
+            padding: 10px;
         }
 
         td{
             text-align: left;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background-color: lightgray;
         }
 
         thead, tfoot{
@@ -41,6 +49,8 @@
         Anatomia para tableas grandes  
 
         TABLE
+            CAPTION = Legenda da tabela/ Título da tabela
+
             THEAD = table head (cabeçalho da tabela)
                 TR = table row (linha da tabela)
                 TH = table header (cabeçalho da tabela)
@@ -58,10 +68,13 @@
     -->
 
         <table>
+
+            <caption>População dos Estados Brasileiros</caption>
+
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col" style="width: 200px">Estado</th>
+                    <th scope="col">População</th>
                 </tr>
 
             </thead>
@@ -210,11 +223,12 @@
 
             <tfoot>
                 <tr>
-                    <th>Total de habitantes</th>
+                    <th scope="row">Total de habitantes</th>
                     
                     <td class="numero" ><strong>983729832893729387</strong></td>
                 </tr>
 
+                <!-- o scope col define o por onde os dados são lidos em coluna, e scope row define o por onde os dados são lidos em linha. Essa é a forma mais semântica de estruturar uma tabela -->
 
             </tfoot>
 
