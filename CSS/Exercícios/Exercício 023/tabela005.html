@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 10px;
+        }
+
+        table{
+            border-collapse:collapse;
+            width: 500px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .destaque {
+            background-color: #80ff00;
+        }
+
+        th:nth-child(4), td:nth-child(4) { 
+            background-color: #6c6c6c;
+            color: white;
+        }
+
+        .cnome{
+            background-color: green;
+        }
+        /* 
+        O assunto dessa aula é destacar as colunas de maneira prática.
+        Foi visto que é fácil destacar linha inteira pelo "tr" e célula inteira pelo "td". Mas para destacar uma coluna inteira, o mais prático é usar a pseudo-classe "nth-child" para selecionar a coluna que se deseja destacar. E para isso, basta usar o seletor de tipo "td" ou "th" seguido da pseudo-classe "nth-child" com o número da coluna entre parênteses. Exemplo: td:nth-child(2) { background-color: #80ff00; } para destacar a segunda coluna.
+
+        Outra maneira de fazer isso é utilizando o colgroup, que é uma tag de agrupamento de colunas. Ele é usado para aplicar estilos a um grupo de colunas a partir do seu título mesclado. Veja como é utilizado no HTML abaixo e no CSS acima 
+        */
+    </style>
+</head>
+<body>
+    <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissao">
+        </colgroup>
+        <caption>
+            Cadastro
+        </caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>30</td>
+                <td>Engenheiro</td>
+            </tr>
+
+            <tr>
+                <td>Maria Silva</td>
+                <td>F</td>
+                <td>28</td>
+                <td>Advogada</td>
+            </tr>
+
+            <tr>
+                <td>João Santos</td>
+                <td>M</td>
+                <td>35</td>
+                <td>Professor</td>
+            </tr>
+
+            <tr>
+                <td>Carla Souza</td>
+                <td>F</td>
+                <td>22</td>
+                <td>Designer</td>
+            </tr>
+
+            <tr>
+                <td>Pedro Oliveira</td>
+                <td>M</td>
+                <td>27</td>
+                <td>Analista de Sistemas</td>
+            </tr>
+        </tbody>
+
+
+
+    </table>
+</body>
+</html>
